@@ -1,0 +1,150 @@
+:root {
+    /**PRIMARY AND SECONDARY COLORS*/
+    --primary: rgba(129, 82, 146, 1);
+    --secondary: rgba(172, 129, 187, 1);
+    --secondary-opacity07: rgba(172, 129, 187, 0.8);
+  
+    /** ACCENT */
+    --accent2: rgba(255, 142, 113, 1);
+    --accent-3: rgba(255, 109, 72, 1);
+    --accent-4: rgba(82, 123, 146, 0.91);
+  
+    /** NEUTRALS */
+    --pure-white: rgba(255, 255, 255, 1);
+    --white: rgba(245, 245, 247, 1);
+    --neutral-2: rgba(229, 232, 241, 1);
+    --neutral-1: rgba(242, 244, 246, 1);
+  
+    --grey-3: #808080;
+    --gray-2: #cacaca;
+      
+  
+    /** BLACKS */
+    --black: #1d1d1f; 
+
+
+    /** FONT SIZES */
+    --font-size-xxlarge: 3rem
+  }
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10vh;
+    box-sizing: border-box;
+}
+
+.header {
+    font-size: var(--font-size-xxlarge);
+    color: var(--black);
+} 
+.span {
+    color: var(--primary);
+}
+
+.horizontal_container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.horizontal::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 3px;
+    background-color: var(--primary);
+    margin-top: -20px;
+}
+
+.form_container {
+    background: var(--neutral-2);
+    padding: 12px 32px;
+    width: 280px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px 36px;
+    margin-top: 40px;
+}
+
+.inputtext , .textarea {
+    background: var(--white);
+    padding: 8px 8px;
+    border: transparent;
+    box-sizing: border-box;
+    margin-top: 12px;
+    margin-bottom: 24px;
+    resize: vertical;
+    width: 100%;
+}
+
+#country_label {
+    padding: 8px 8px;
+    margin-top: 200px;
+    margin-bottom: 12px;
+}
+.inputradio {
+   
+    padding: 8px 8px;
+    border: transparent;
+    box-sizing: border-box;
+    margin-top: 12px;
+    margin-bottom: 6px;
+}
+
+
+.inputtext::placeholder {
+    font-size: 12px;
+}
+
+.textarea::placeholder {
+    font-size: 12px;
+}
+
+.inputtext:hover {
+    border: 2px solid var(--primary);
+}
+.textarea {
+    height: 150px;
+}
+
+.inputcontainer {
+    margin-bottom: 30px;
+}
+
+.button {
+    width: 100%;
+}
+
+.button_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.form_header {
+    font-family: var(--OpenSans);
+    font-size: 20px;
+    color: var(--black);
+    text-align: center;
+}
+
+.labels {
+    font-size: 14px;
+    color: var(--black);
+  
+}
+
+button {
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 8px 12px;
+}
+
+.terms {
+    font-size: 14px;
+}
